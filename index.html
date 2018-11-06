@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Human Survey</title>
+</head>
+<body>
+    <div id="body">
+        <div id="headline">
+          <h1 id="title">The "Human" Survey</h1>
+          <p id="description">This short survey is designed to test whether or not you are a human. If you are found to not be a human you will be immediately eradicated. </p>
+        </div>
+        <form id="survey-form">
+          <div class="input-row">
+            <div class="input-title">
+              <label for="name" id="name-label">Name: </label>
+            </div>
+            <div class="inputs">
+              <input type="text" name="name" id="name" placeholder="Enter your name" class="input-box" required>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="email" id="email-label">Email: </label>
+            </div>
+            <div class="inputs">
+              <input type="email" name="email" id="email" placeholder="Enter your email" class="input-box" required>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="number" id="number-label">Age: </label>
+            </div>
+            <div class="inputs">
+              <input type="number" name="number" id="number" placeholder="age" min="1" max="1000" class="input-box" required>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="humanDropdown" id="dropdown-label">Are you human? </label>
+            </div>
+            <div class="inputs">
+              <select name="humanDropdown" id="dropdown" required>
+                <option value=" ">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="humanRadio" id="dropdown-label">Are you human? </label>
+            </div>
+            <div class="inputs">
+              <ul class="radio-list">
+                <li class="radio-options"><label>Yes<input type="radio" name="radios" value="Yes" class="human-radios"></label></li>
+                <li class="radio-options"><label>No<input type="radio" name="radios" value="No" class="human-radios"></label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="humanCheckbox" id="checkbox-label">How human are you? </label>
+            </div>
+            <div class="inputs">
+              <ul class="radio-list">
+                <li class="radio-options"><label>Fully Human<input type="checkbox" name="humanCheckbox" value="Full" class="human-radios"></label></li>
+                <li class="radio-options"><label>Half human, half machine<input type="checkbox" name="radios" value="cyborg" class="human-radios"></label></li>
+                <li class="radio-options"><label>Not at all, I'm a machine baby!<input type="checkbox" name="radios" value="machine" class="human-radios"></label></li>
+                <li class="radio-options"><label>I prefer not to say<input type="checkbox" name="radios" value="neutral" class="human-radios"></label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-title">
+              <label for="email" id="comment-label">Additional comments about being human: </label>
+            </div>
+            <div class="inputs">
+              <textarea style="height: 60px"name="comments" id="comments" placeholder="Your thoughts..." class="input-box"></textarea>
+            </div>
+          </div>
+          <div id="submit-container">
+            <button id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
